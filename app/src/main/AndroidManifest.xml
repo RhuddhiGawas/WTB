@@ -9,19 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SingleProduct"></activity>
+        <activity
+            android:name=".Sign_In"
+            android:exported="true" />
+        <activity
+            android:name=".Sign_Up"
+            android:exported="true" />
         <activity
             android:name=".Home"
+            android:exported="true"
             android:label="My_Application"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"></activity>
-        <activity android:name=".MainActivity">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
 
+        </activity>
     </application>
 
 </manifest>
